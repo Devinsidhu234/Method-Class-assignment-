@@ -1,0 +1,41 @@
+using System;
+
+namespace ConsoleApp
+{
+    // Define a class named MathOperations
+    public class MathOperations
+    {
+        // Define a method named PerformOperation
+        // It takes two integers as parameters
+        public void PerformOperation(int number1, int number2)
+        {
+            // Perform a math operation on the first integer (e.g., adding 10)
+            int result = number1 + 10;
+            
+            // Display the second integer to the screen
+            Console.WriteLine($"Result after adding 10 to {number1} is {result}.");
+            Console.WriteLine($"The second integer is: {number2}");
+        }
+    }
+}
+using System;
+
+namespace ConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Instantiate the MathOperations class
+            MathOperations mathOps = new MathOperations();
+            
+            // Call the PerformOperation method with positional parameters
+            mathOps.PerformOperation(5, 20);
+            
+            // Call the PerformOperation method with named parameters
+            mathOps.PerformOperation(number1: 15, number2: 30);
+        }
+    }
+}
+git remote add origin <https://github.com/Devinsidhu234/Method-Class-assignment->
+git push -u origin master
